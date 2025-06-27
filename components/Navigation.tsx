@@ -6,6 +6,9 @@ import { useUser } from "@/contexts/UserContext"
 import { useRouter } from "next/navigation"
 import { gsap } from "gsap"
 import { Menu, X, User, LogOut } from "lucide-react"
+import { ScrollToPlugin } from "gsap/ScrollToPlugin"
+
+gsap.registerPlugin(ScrollToPlugin)
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
